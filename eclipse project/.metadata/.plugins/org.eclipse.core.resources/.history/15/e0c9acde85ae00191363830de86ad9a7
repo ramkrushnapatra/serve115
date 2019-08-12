@@ -1,0 +1,5 @@
+package com.maren.demosec.model;
+
+public class Profile {
+
+}

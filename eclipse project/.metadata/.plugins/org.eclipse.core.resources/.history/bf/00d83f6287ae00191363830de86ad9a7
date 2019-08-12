@@ -1,0 +1,5 @@
+package com.maren.demosec.dao;
+
+public class ProfileDao {
+
+}

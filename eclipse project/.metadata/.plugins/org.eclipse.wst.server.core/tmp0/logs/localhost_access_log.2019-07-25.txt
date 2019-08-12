@@ -1,0 +1,9 @@
+127.0.0.1 - - [25/Jul/2019:06:15:57 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [25/Jul/2019:06:15:59 +0530] "GET /demosec/home.html HTTP/1.1" 200 390
+0:0:0:0:0:0:0:1 - - [25/Jul/2019:06:16:06 +0530] "GET /demosec/ParamAction?name=Aniket HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [25/Jul/2019:06:16:38 +0530] "GET /demosec/home.html HTTP/1.1" 200 390
+0:0:0:0:0:0:0:1 - - [25/Jul/2019:06:16:39 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [25/Jul/2019:06:16:44 +0530] "GET /demosec/ParamAction?name=aniket HTTP/1.1" 200 21
+0:0:0:0:0:0:0:1 - - [25/Jul/2019:06:16:50 +0530] "GET /demosec/DispacherController?n0=54 HTTP/1.1" 500 1605
+0:0:0:0:0:0:0:1 - - [25/Jul/2019:06:17:31 +0530] "GET /demosec/scopeTest HTTP/1.1" 200 68
+0:0:0:0:0:0:0:1 - - [25/Jul/2019:06:17:34 +0530] "GET /demosec/DispacherController?n0=54 HTTP/1.1" 500 1605

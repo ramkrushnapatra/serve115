@@ -1,0 +1,35 @@
+
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Main")
+public class Insert extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","aniket30");
+			Statement st=con.createStatement();
+			//String name=request.getParameter("name");
+			int sql=st.executeUpdate("insert into aniket25 values('sridev')");
+			System.out.println("data inserted");
+	}
+		catch(Exception e)
+		{
+			System.out.println(e);
+			e.printStackTrace();
+		}
+
+}
+}
